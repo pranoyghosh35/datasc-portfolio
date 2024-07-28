@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between logos as needed */
+    justify-content: center;
+}
+
+.social-links img {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    object-fit: contain; /* Ensure the logos are contained within the specified dimensions */
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.qualification, {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.cards-container {
+    position: relative; /* Necessary for overlay positioning */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cards-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pics/background-texture.jpg'); /* Use your existing image path */
+    background-size: cover; /* Stretch to fit the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    opacity: 0.3; /* Adjust opacity to create whitewash effect */
+    z-index: -1; /* Place it behind the content */
+}
+
+.cards-container > * {
+    position: relative; /* Ensure content stays above the overlay */
+    z-index: 1;
+}
+
+.card0 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+.toggle-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-content {
+    display: none;
+    padding: 20px;
+}
+
+.card-content p {
+    margin: 10px 0;
+}
+
+.card-content a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
