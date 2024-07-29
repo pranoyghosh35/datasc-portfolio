@@ -35,6 +35,12 @@ header {
     object-fit: contain; /* Ensure the logos are contained within the specified dimensions */
 }
 
+.latest-resume-coverletter img {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    object-fit: contain; /* Ensure the logos are contained within the specified dimensions */
+}
+
 .info {
     margin-top: 20px;
 }
