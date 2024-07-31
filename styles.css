@@ -88,7 +88,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin: 20px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     overflow: hidden;
 }
@@ -97,7 +97,17 @@ header {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 20px;
+    margin: 60px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card4 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 60px;
     width: 300px;
     text-align: center;
     overflow: hidden;
@@ -107,7 +117,7 @@ header {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 20px;
+    margin: 40px;
     width: 300px;
     text-align: center;
     overflow: hidden;
@@ -117,7 +127,7 @@ header {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 20px;
+    margin: 60px;
     width: 300px;
     text-align: center;
     overflow: hidden;
@@ -131,10 +141,6 @@ header {
     cursor: pointer;
 }
 
-.card-content {
-    display: none;
-    padding: 20px;
-}
 
 .card-content p {
     margin: 10px 0;
