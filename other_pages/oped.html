@@ -20,6 +20,42 @@
             font-style: italic;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 300px;  /* Fixed width */
+            height: 300px; /* Fixed height */
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the box without stretching */
+            display: block;
+        }
+
+        .image-wrapper .credit {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .image-wrapper:hover .credit {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +82,16 @@
     <p>
         Notable examples of AI-generated art exhibited alongside human art include <b><i> Refik Anadol’s immersive installation at the Venice Biennale in 2023, which used AI to create dynamic simulations and interactive sculptures. Artists like Sougwen Chung collaborate with AI to blend human creativity with machine intelligence, showcasing their work in renowned galleries like the Museum of Modern Art in New York. Similarly, Hito Steyerl, Ian Cheng, Lauren Lee McCarthy, and Anna Ridler utilize AI to explore various themes and create artworks exhibited in prominent institutions globally.</b> As AI continues to evolve, the distinction between human and machine-generated art will become increasingly blurred.</i>
     </p>
+
+    <div class="image-container">
+        <div class="image-wrapper">
+            <a href="https://www.moma.org/calendar/exhibitions/5535" target="_blank">
+                <img src="unsupervised.gif" alt="Unsupervised by Refik Anadol">
+                <div class="credit">Refik Anadol. Unsupervised — Machine Hallucinations — MoMA. 2022.</div>
+            </a>
+        </div>
+    </div>
+
     <h2>Conclusion: Beware of Deepfakes though</h2>
     <p>
         <b> Deep Fakes are synthetic media created using AI to fabricate realistic videos, images, or audio of individuals. This technology poses a significant threat, enabling the creation of highly realistic fabricated content that is difficult to distinguish from genuine media. Their prevalence on social media facilitates the rapid spread of misinformation, manipulating public opinion and creating false narratives.</b> Despite advances in detection techniques, such as AI-based algorithms and forensic analysis, these measures must continually evolve to keep pace with the sophistication of deep fakes. The impact on public trust is profound, as deep fakes erode confidence in media and information sources, making it harder for people to discern truth from falsehood.
@@ -88,23 +134,5 @@
             <a href="https://www.nbcnews.com/tech/tech-news/famous-artists-trained-ai-generator-viral-list-rcna131995">https://www.nbcnews.com/tech/tech-news/famous-artists-trained-ai-generator-viral-list-rcna131995</a> (Accessed: 16 June 2024).
         </li>
     </ol>
-    <ol>
-        <li>
-            (No date) What is AI Art &amp; How Does It Work? - adobe firefly. Available at:
-            <a href="https://www.adobe.com/products/firefly/discover/what-is-ai-art.html">https://www.adobe.com/products/firefly/discover/what-is-ai-art.html</a> (Accessed: 16 June 2024).
-        </li>
-    </ol>
-    <ol>
-        <li>
-            What is ai-generated art? - updated 2024 (2024) The Interaction Design Foundation. Available at:
-            <a href="https://www.interaction-design.org/literature/topics/ai-generated-art">https://www.interaction-design.org/literature/topics/ai-generated-art</a> (Accessed: 16 June 2024).
-        </li>
-    </ol>
-    <ol>
-        <li>
-            Burton, E. (2024a) Which artists are using AI and why?, Design Dash. Available at:
-            <a href="https://designdash.com/2024/03/18/human-creativity-x-machine-learning-which-artists-are-using-ai-and-why/">https://designdash.com/2024/03/18/human-creativity-x-machine-learning-which-artists-are-using-ai-and-why/</a> (Accessed: 16 June 2024).
-        </li>
-    </ol>
-</body>
-</html>
+   
+
