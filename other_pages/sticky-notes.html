@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes 🗒️</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .center-align {
+            text-align: center;
+        }
+
+        .center-box {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+
+        #topic-index ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #topic-index li {
+            margin-bottom: 10px;
+        }
+
+        #topic-index a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        #topic-index a:hover {
+            text-decoration: underline;
+        }
+
+        .scrolling-container {
+            margin-top: 20px;
+        }
+
+        .scroll-dot {
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .scroll-dot.active {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sticky Notes 🗒️</h1>
+    </header>
+    <nav id="read-me" class="center-align">
+        <p><b>READ ME !! </b><a href="https://drive.google.com/drive/folders/1lPo5cew9uLp3pVZx1vnaktYndxJO47vR?usp=sharing" target="_blank"><img src="drive-icon.png" alt="Drive Icon" style="width:30px;height:30px;"></a></p>
+        <p><b><i>Tip for quick memorization:</i></b> Scheme through any document, put in ChatGPT (or your favourite multi-modal LLM) and ask your doubts. <br> Then go through FAQs below, try your own, then read our answer...</p>
+    </nav>
+    <main>
+        <div id="topic-index" class="center-align center-box">
+            <h2>Index</h2>
+            <ul>
+                <li><a href="#topic1" data-dot="dot1"><div class="scroll-dot" id="dot1"></div>1. Traditional Machine Learning: Supervised, Non-supervised and Regression models, shallow neural network</a></li>
+                <li><a href="#topic2" data-dot="dot2"><div class="scroll-dot" id="dot2"></div>2. Deep Learning, Famous Convolutional Neural Networks, LSTMs, Transformers</a></li>
+                <li><a href="#topic3" data-dot="dot3"><div class="scroll-dot" id="dot3"></div>3. Computer Vision: YOLO, VGG, Vision Transformers, AutoEncoders, GaNs</a></li>
+                <li><a href="#topic4" data-dot="dot4"><div class="scroll-dot" id="dot4"></div>4. LLMs, Natural Language Processing</a></li>
+                <li><a href="#topic5" data-dot="dot5"><div class="scroll-dot" id="dot5"></div>5. Python, OOPs and SOLID, System Design</a></li>
+                <li><a href="#topic6" data-dot="dot6"><div class="scroll-dot" id="dot6"></div>6. SQL</a></li>
+                <li><a href="#topic7" data-dot="dot7"><div class="scroll-dot" id="dot7"></div>7. DSA and tips for solving famous problems</a></li>
+                <li><a href="#topic8" data-dot="dot8"><div class="scroll-dot" id="dot8"></div>8. Stats, Probability and Linear Algebra</a></li>
+                <li><a href="#topic9" data-dot="dot9"><div class="scroll-dot" id="dot9"></div>9. Miscellaneous: what common JDs look for</a></li>
+                <li><a href="#topic10" data-dot="dot10"><div class="scroll-dot" id="dot10"></div>10. My Latest Readings from Literature</a></li>
+            </ul>
+        </div>
+        <div class="scrolling-container">
+            <div id="sections">
+                <section id="topic1">
+                    <h2>Traditional Machine Learning: Supervised, Non-supervised and Regression models, shallow neural network</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Traditional Machine Learning...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic2">
+                    <h2>Deep Learning, Famous Convolutional Neural Networks, LSTMs, Transformers</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Deep Learning...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic3">
+                    <h2>Computer Vision: YOLO, VGG, Vision Transformers, AutoEncoders, GaNs</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Computer Vision...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic4">
+                    <h2>LLMs, Natural Language Processing</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for LLMs and NLP...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic5">
+                    <h2>Python, OOPs and SOLID, System Design</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Python, OOPs, SOLID...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic6">
+                    <h2>SQL</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for SQL...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic7">
+                    <h2>DSA and tips for solving famous problems</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for DSA...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic8">
+                    <h2>Stats, Probability and Linear Algebra</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Stats, Probability, Linear Algebra...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic9">
+                    <h2>Miscellaneous: what common JDs look for</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Miscellaneous topics...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="topic10">
+                    <h2>My Latest Readings from Literature</h2>
+                    <button class="collapsible">Load More</button>
+                    <div class="content">
+                        <p><b>Must visit:</b></p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU" target="_blank"><img src="youtube-icon.png" alt="YouTube Icon" style="width:30px;height:30px;"> Deep Learning Playlist</a></li>
+                        </ul>
+                        <p><b>FAQs:</b></p>
+                        <ul>
+                            <li>FAQ content for Latest Readings...</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+
+            var links = document.querySelectorAll("#topic-index a");
+            links.forEach(link => {
+                link.addEventListener("click", function () {
+                    var dotId = this.getAttribute("data-dot");
+                    document.getElementById(dotId).classList.add("active");
+                });
+            });
+
+            window.addEventListener("scroll", function () {
+                var sections = document.querySelectorAll("section");
+                var scrollDots = document.querySelectorAll(".scroll-dot");
+                sections.forEach((section, index) => {
+                    var rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+                        scrollDots[index].classList.add("active");
+                    } else {
+                        scrollDots[index].classList.remove("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
